@@ -61,7 +61,7 @@ for i in range (4):
 print(board)
 
 # Una manera mas corta de hacer esto
-board = [["EMPTY" for i in range(8)] for j in range(8)]
+board = [[2 for i in range(8)] for j in range(8)]
 for i in range(8):
     print("||",end="")
     for j in range(8):
