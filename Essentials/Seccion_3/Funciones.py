@@ -16,3 +16,39 @@ escritas por separado empacadas juntas en diferentes modulos
 # NO INVOCAR LA FUNCION ANTES DE DEFINIRLA
 
 """Funciones parametrizadas"""
+# Los parametros solo existen dentro de las funciones en donde han sido definidos
+# La asignacion de un valor a un parametro de una funcion se hace en el momento en que la funcion se manda a llamar
+
+# def function(parameter):
+#   ####
+
+# Los parametros solo existen dentro de las funciones
+# Los argumentos existen fuera de las funciones
+
+
+def message(number):
+    print("Ingresa un numero: ", number)
+message(10)
+# Una funcion puede tener tantos parametros como se desee
+
+"""Paso de parametros posicionales"""
+# Paso de parametros posicionales: Los argumentos pasados de esta manera son llamados argumentos posicionales
+
+def my_function(a, b, c):
+    print(a, b, c)
+my_function(1, 2, 3)
+
+"""Paso de argumentos de palabra clave"""
+# El significado del argumento esta definido por su nombre
+# No se debe de utilizar el nombre de un parametro que no existe
+
+def introduction(first_name, last_name):
+    print("Hola, mi nombre es: ", first_name, last_name)
+introduction(last_name="Skywalker", first_name="Luke")
+
+"""Funciones parametrizadas - mas detalles"""
+# Funciones que tienen parametros fijos
+# Aprovecho a hacer una sobre carga de metodos
+def introduction(first_name, last_names="Garduño"):
+    print("Hola, mi nombre es",first_name,last_names)
+introduction(first_name="Jair")
