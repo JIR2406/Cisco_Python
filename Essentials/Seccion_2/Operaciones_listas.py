@@ -38,3 +38,33 @@ print(5 not in my_list)
 print(12 in my_list)
 
 #Aplicaciones avanzadas
+row=[]
+for i in range(8):
+    row.append("WHITE_PAWN")
+
+# Comprension de lista, la sintaxis especial para completar o llevar listas masivas
+# Datos que se usan para completar la lista ("WHITE_PAWN")
+# Cuantas veces se producen los datos dentro de la lista (for in range(8))
+row=["WHITE_PAWN" for i in range(8)]
+print(row)
+
+# Otro ejemplo del uso de lista
+squares=[1,2,3,4,5,6,7,8,9]
+odds = [x for x in squares if x % 2 != 0]
+print(odds)
+
+# Arreglos de dos dimensiones "Matrices"
+board=[]
+for i in range (4):
+    row =["Vacio" for i in range(4)]
+    board.append(row)
+print(board)
+
+# Una manera mas corta de hacer esto
+board = [["EMPTY" for i in range(8)] for j in range(8)]
+for i in range(8):
+    print("||",end="")
+    for j in range(8):
+        print(board[i][j],end="||")
+    print("\n")
+
