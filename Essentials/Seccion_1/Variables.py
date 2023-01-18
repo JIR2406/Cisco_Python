@@ -12,8 +12,3 @@ print(multiplicacion)
 print(exponente)
 print(division)
 print(modulo)
-x=int(input())
-y=int(input())
-x=x//y
-y=y//x
-print(y)
