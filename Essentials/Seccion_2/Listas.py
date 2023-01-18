@@ -63,3 +63,8 @@ my_list_2=[1,'a',["lista",64,[0,1],False]]
 
 # Se puede borrar la lista entera
 del my_list_2
+
+# Se puede ordenar una lista, con la funcion sort()
+my_list_3=[3,8,2,10]
+my_list_3.sort() #[2,3,8,10]
+print(my_list_3)
