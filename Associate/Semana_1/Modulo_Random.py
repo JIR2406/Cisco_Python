@@ -33,3 +33,24 @@ print(randrange(100))
 
 """Tienen una desventaja"""
 # Pueden producir valores repetidos incluso si el numero de invocaciones posteriores no es mayor que el rango especificado
+
+"""Funcion choice y sample"""
+# choice(secuencia)
+# sample(secuencia, elementos_a_elegir=1)
+# La primera variante elige un elemento 'aleatorio' de la secuencia de entrada y lo devuelve
+# El segundo crea una lista que consta del elemento de la secuencia de entrada
+from random import choice, sample
+my_list=[1,2,3,4,5,6,7,8,9,10]
+print(choice(my_list))
+print(sample(my_list,5))
+print(sample(my_list,10))
+
+"""
+Las capas son:
+# Tu codigo se encuentra en la parte superior
+# Python se encuentra directamente debajo de el 
+# La sieuinte capa de la piramide se llama SO el
+  entorno de Python proporciona algunas de sus funcionalidades utilizando los servicios del sistema operativo
+# La capa mas inferior es el hardware, el procesador, las interfaces de red, los dispositivos de interfaz humana
+  y toda otra maquinaria
+"""
