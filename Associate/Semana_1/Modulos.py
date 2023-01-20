@@ -49,3 +49,12 @@ import sys as sistema
 # Despues de una importacion de alias el nombre original del modulo se vuelve inaccesible
 # Tambien funciona para las entidades
 from math import sin as sen, pi as PI
+
+"""Funcion dir()"""
+# Tiene una condicion para su uso, el modulo debe haber sido importado como un todo
+# dir(): Devuelve una lista ordenada alfabeticamente la cual tiene el nombre de las entidades dispobibles
+# en el modulo
+import math
+for i in dir(math):
+    print(i, end="\t") 
+
