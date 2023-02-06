@@ -24,6 +24,5 @@ if __name__=='__main__':
     path.append('C:\\Users\\Latitude 7490\\OneDrive\\Documentos\\GitHub\\Cisco_Python-1\\Associate\\Semana_1\\extra') 
     import extra.iota as ioat
     print(ioat.FunI())
-
-    #
+    from random import randint
     
