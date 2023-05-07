@@ -20,4 +20,5 @@ class AddingStack(pl): # Esta clase hace herencia al colocar la otra clase en lo
 pila2 = AddingStack()
 
 pila2.push(2)
+pila2.push(3)
 print(pila2.pop())
