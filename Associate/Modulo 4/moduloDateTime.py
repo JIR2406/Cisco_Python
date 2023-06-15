@@ -40,4 +40,47 @@ print(d)
 
 d = d.replace(year=1992, month=1, day=16)
 print(d)
-    
+
+class Student:
+    def take_nap(self, seconds):
+        print("Estoy muy cansado. Tengo que tomar una siesta. Hasta luego.")
+        time.sleep(seconds) # La funcion da una respuesta un poco tarde
+        print("¡Dormí bien! ¡Me siento genial!")
+
+student = Student()
+student.take_nap(5)
+
+# Obtenemos la hora actual
+hora= time.ctime()
+print(hora)
+
+"""
+time.struct_time:
+    tm_year   # Especifica el año.
+    tm_mon    # Especifica el mes (valor de 1 a 12)
+    tm_mday   # Especifica el día del mes (value from 1 to 31)
+    tm_hour   # Especifica la hora (valor de 0 a 23)
+    tm_min    # Especifica el minuto (valor de 0 a 59)
+    tm_sec    # Especifica el segundo (valor de 0 a 61)
+    tm_wday    # Especifica el día de la semana (valor de 0 a 6)
+    tm_yday   # Especifica el día del año (valor de 1 a 366)
+    tm_isdst  # Especifica si se aplica el horario de verano (1: sí, 0: no, -1: no se sabe)
+    tm_zone   # Especifica el nombre de la zona horaria (valor en forma abreviada)
+    tm_gmtoff # Especifica el desplazamiento al este del UTC (valor en segundos)
+"""
+
+"""
+Creando objetos datetime
+
+Parámetro	Restricciones
+year	El parámetro year debe ser mayor o igual a 1 (constante MINYEAR) y menor o igual a 9999 (constante MAXYEAR).
+month	El parámetro month debe ser mayor o igual a 1 y menor o igual a 12.
+day	El parámetro day debe ser mayor o igual a 1 y menor o igual al último día del mes y año indicados.
+hour	El parámetro hour debe ser mayor o igual que 0 y menor que 23.
+minute	El parámetro minute debe ser mayor o igual que 0 y menor que 59.
+second	El parámetro second debe ser mayor o igual que 0 y menor que 59.
+microsecond	El parámetro microsecond debe ser mayor o igual que 0 y menor que 1000000.
+tzinfo	El parámetro tzinfo debe ser una subclase del objeto tzinfo o None (de manera predeterminada).
+fold	El parámetro fold debe ser 0 o 1 (predeterminadamente 0).
+"""
+
