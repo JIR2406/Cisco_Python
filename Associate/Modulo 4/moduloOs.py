@@ -21,3 +21,18 @@ que significa que se crearán todos los directorios de la ruta
 #os.chdir("pruebaModuloOs")
 print(os.listdir())
 
+# ¿En que ruta estoy?
+
+print(os.getcwd())
+    
+# Eliminar directorios
+os.mkdir("my_first_directory")
+print(os.listdir()) #Elimina el directorio
+os.rmdir("my_first_directory")
+print(os.listdir())
+
+# Funcion system
+
+returned_value = os.system("mkdir my_first_directory")
+print(returned_value)
+
