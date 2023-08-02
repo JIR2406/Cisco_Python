@@ -1,7 +1,7 @@
 import os
 
-directorio = "C:/Users/jairg/Downloads/Fotos Miercoles 12 de Julio"  # Ruta del directorio a examinar
-cod=1
+directorio = "C:/Users/jairg/Downloads/NESTLE/SILAO/Anteriores/26 julio 2023"  # Ruta del directorio a examinar
+cod=4383
 archivos = os.listdir(directorio)
 
 

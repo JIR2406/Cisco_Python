@@ -7,7 +7,6 @@ class Persona:
         self.__fechaN = fechaN
         self.__telefono = telefono
         self.__rfc = ""
-
     def setRFC(self):
         rfc = ""
         rfc += self.__apellidoP[0]
@@ -28,8 +27,3 @@ class Persona:
         print(f"Fecha de nacimiento: {self.__fechaN}")
         print(f"Telefono: {self.__telefono}")
         print(f"RFC: {self.__rfc}")
-
-
-obj = Persona(1, "Jair", "Garduño", "Rodriguez","24/06/2003","7225847678")
-obj.setRFC()
-obj.__str__()
