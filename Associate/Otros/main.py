@@ -33,10 +33,15 @@ if __name__ == "__main__":
         case "3":
            pass
         case "4":
+           arbol.eliminar_todo()
+           print("Usuarios eliminados exitosamente")
            pass
         case "5":
             datos=arbol.imprimir_inorden()
-            for i in datos:
-               print(i.__str__())    
+            if len(datos)!=0:
+               for i in datos:
+                  print(i.__str__())    
+            else:
+               print("No hay usuarios registrados")
         case "6":
            break
